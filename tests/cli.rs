@@ -275,7 +275,7 @@ mod external_tool_tests {
     fn pdf_split_and_merge_use_qpdf() -> Result<(), Box<dyn std::error::Error>> {
         let (dir, _) = fake_bin(
             "qpdf",
-            r#"printf '%s\n' "$@" > "$MEDIAUTIL_ARGS"; touch "${@: -1}""#,
+            r#"printf '%s\n' "$@" > "$MEDIAUTIL_ARGS"; for arg do last="$arg"; done; touch "$last""#,
         )?;
         let args_file = dir.path().join("args.txt");
         let input_a = dir.path().join("a.pdf");
