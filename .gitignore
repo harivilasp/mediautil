@@ -1,0 +1,12 @@
+/target/
+*.tgz
+*.whl
+*.tar.gz
+*.egg-info/
+dist/
+build/
+**/dist/
+**/build/
+**/*.egg-info/
+**/__pycache__/
+.DS_Store

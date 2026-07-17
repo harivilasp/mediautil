@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mediautil-cli"
+version = "0.1.0"
+description = "Local media utility shell for images, PDFs, OCR, QR codes, data URIs, and base64."
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+authors = [{ name = "mediautil contributors" }]
+keywords = ["cli", "media", "pdf", "ocr", "qr"]
+classifiers = [
+  "Environment :: Console",
+  "Programming Language :: Rust",
+  "Topic :: Multimedia :: Graphics",
+  "Topic :: Utilities"
+]
+
+[project.scripts]
+mediautil = "mediautil_cli:main"
+
+[project.urls]
+Homepage = "https://github.com/harivilasp/mediautil"
+Repository = "https://github.com/harivilasp/mediautil"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["mediautil_cli*"]

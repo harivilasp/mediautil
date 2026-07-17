@@ -1,0 +1,22 @@
+{
+  "name": "@harivilasp/mediautil",
+  "version": "0.1.0",
+  "description": "Local media utility shell for images, PDFs, OCR, QR codes, data URIs, and base64.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harivilasp/mediautil.git"
+  },
+  "bin": {
+    "mediautil": "bin/mediautil.js"
+  },
+  "files": [
+    "bin"
+  ],
+  "scripts": {
+    "postinstall": "node bin/mediautil.js --install-only"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
