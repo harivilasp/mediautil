@@ -11,7 +11,8 @@
     "mediautil": "bin/mediautil.js"
   },
   "files": [
-    "bin"
+    "bin",
+    "README.md"
   ],
   "scripts": {
     "postinstall": "node bin/mediautil.js --install-only"

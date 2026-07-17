@@ -1,20 +1,20 @@
-# mediautil-cli
+# mediautil
 
 `mediautil` is a local-first command-line utility for everyday media chores that should not require uploading private files to web tools. It gives developers and power users one consistent CLI for images, PDFs, OCR, QR codes, icons, data URIs, and base64 workflows.
 
-This PyPI package installs a launcher named `mediautil`. The launcher downloads the matching Rust binary from GitHub Releases on first run and then executes it.
+This npm package installs the `mediautil` Rust binary from the matching GitHub Release.
 
 ## Install
 
 ```bash
-pip install mediautil-cli
+npm install -g @harivilasp/mediautil
 ```
 
 Other install options:
 
 ```bash
 cargo install mediautil
-npm install -g @harivilasp/mediautil
+pip install mediautil-cli
 brew install harivilasp/tap/mediautil
 ```
 
