@@ -5,7 +5,7 @@ const os = require("os");
 const path = require("path");
 const { spawnSync } = require("child_process");
 
-const version = "0.1.0";
+const version = "0.1.1";
 const repo = process.env.MEDIAUTIL_REPO || "harivilasp/mediautil";
 const binDir = path.join(__dirname, "..", "vendor");
 const binPath = path.join(binDir, process.platform === "win32" ? "mediautil.exe" : "mediautil");

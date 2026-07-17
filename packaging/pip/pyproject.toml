@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "mediautil-cli"
-version = "0.1.0"
-description = "Local media utility shell for images, PDFs, OCR, QR codes, data URIs, and base64."
+version = "0.1.1"
+description = "Local-first CLI for image/PDF utilities, OCR, QR codes, icons, data URIs, and base64 workflows."
 readme = "README.md"
 requires-python = ">=3.9"
 license = "MIT"

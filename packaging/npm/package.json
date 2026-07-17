@@ -1,7 +1,7 @@
 {
   "name": "@harivilasp/mediautil",
-  "version": "0.1.0",
-  "description": "Local media utility shell for images, PDFs, OCR, QR codes, data URIs, and base64.",
+  "version": "0.1.1",
+  "description": "Local-first CLI for image/PDF utilities, OCR, QR codes, icons, data URIs, and base64 workflows.",
   "license": "MIT",
   "repository": {
     "type": "git",

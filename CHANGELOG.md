@@ -2,7 +2,14 @@
 
 All notable changes to `mediautil` will be documented here.
 
-## 0.1.0 - Unreleased
+## 0.1.1 - Unreleased
+
+### Changed
+
+- Improve public package descriptions and installation instructions across README, crates.io, npm, PyPI, and Homebrew metadata.
+- Document live validation against real OCR and PDF tools.
+
+## 0.1.0 - 2026-07-17
 
 ### Added
 

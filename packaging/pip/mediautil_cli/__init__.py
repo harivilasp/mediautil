@@ -10,7 +10,7 @@ import urllib.request
 import zipfile
 from pathlib import Path
 
-VERSION = "0.1.0"
+VERSION = "0.1.1"
 REPO = os.environ.get("MEDIAUTIL_REPO", "harivilasp/mediautil")
 
 

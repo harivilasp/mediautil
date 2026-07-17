@@ -1,8 +1,8 @@
 class Mediautil < Formula
-  desc "Local media utility shell for images, PDFs, OCR, QR codes, data URIs, and base64"
+  desc "Local-first CLI for image/PDF utilities, OCR, QR codes, icons, data URIs, and base64"
   homepage "https://github.com/harivilasp/mediautil"
-  url "https://github.com/harivilasp/mediautil/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "c9f9596ff97684733f5b331484223d8dcb7f85011b8d58be6061099fd4c91e64"
+  url "https://github.com/harivilasp/mediautil/archive/refs/tags/v0.1.1.tar.gz"
+  sha256 "REPLACE_WITH_RELEASE_TARBALL_SHA256"
   license "MIT"
   head "https://github.com/harivilasp/mediautil.git", branch: "main"
 

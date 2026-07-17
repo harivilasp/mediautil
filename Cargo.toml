@@ -1,8 +1,8 @@
 [package]
 name = "mediautil"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2024"
-description = "A lightweight local media utility shell for images, PDFs, OCR, QR codes, data URIs, and base64 workflows."
+description = "Local-first CLI for image/PDF utilities, OCR, QR codes, icons, data URIs, and base64 workflows."
 license = "MIT"
 repository = "https://github.com/harivilasp/mediautil"
 homepage = "https://github.com/harivilasp/mediautil"
