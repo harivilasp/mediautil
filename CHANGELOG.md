@@ -2,7 +2,14 @@
 
 All notable changes to `mediautil` will be documented here.
 
-## 0.1.1 - Unreleased
+## 0.1.2 - Unreleased
+
+### Changed
+
+- Publish full npm and PyPI package READMEs so registry pages explain install options, supported workflows, external tools, and examples.
+- Follow GitHub release redirects in the npm postinstall binary downloader.
+
+## 0.1.1 - 2026-07-17
 
 ### Changed
 

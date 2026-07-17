@@ -5,7 +5,7 @@ const os = require("os");
 const path = require("path");
 const { spawnSync } = require("child_process");
 
-const version = "0.1.1";
+const version = "0.1.2";
 const repo = process.env.MEDIAUTIL_REPO || "harivilasp/mediautil";
 const binDir = path.join(__dirname, "..", "vendor");
 const binPath = path.join(binDir, process.platform === "win32" ? "mediautil.exe" : "mediautil");
@@ -24,17 +24,34 @@ function assetUrl() {
   return `https://github.com/${repo}/releases/download/v${version}/mediautil-${t}.${suffix}`;
 }
 
-function download(url, destination) {
-  fs.mkdirSync(path.dirname(destination), { recursive: true });
-  const file = fs.createWriteStream(destination);
+function download(url, destination, redirects = 0) {
+  if (redirects > 5) {
+    return Promise.reject(new Error(`download failed: too many redirects ${url}`));
+  }
+
   return new Promise((resolve, reject) => {
     https.get(url, (response) => {
+      if ([301, 302, 303, 307, 308].includes(response.statusCode)) {
+        const location = response.headers.location;
+        if (!location) {
+          reject(new Error(`download failed: ${response.statusCode} missing location ${url}`));
+          return;
+        }
+        response.resume();
+        download(new URL(location, url).toString(), destination, redirects + 1).then(resolve, reject);
+        return;
+      }
+
       if (response.statusCode !== 200) {
         reject(new Error(`download failed: ${response.statusCode} ${url}`));
         return;
       }
+
+      fs.mkdirSync(path.dirname(destination), { recursive: true });
+      const file = fs.createWriteStream(destination);
       response.pipe(file);
       file.on("finish", () => file.close(resolve));
+      file.on("error", reject);
     }).on("error", reject);
   });
 }
