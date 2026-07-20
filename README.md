@@ -116,6 +116,10 @@ npm pack --dry-run --prefix packaging/npm
 python -m build packaging/pip
 ```
 
+published links:
+- https://pypi.org/project/mediautil-cli/
+- https://www.npmjs.com/package/@harivilasp/mediautil
+
 ## Contributing
 
 See `CONTRIBUTING.md`, `AGENTS.md`, `docs/ARCHITECTURE.md`, and `docs/TESTING.md` before adding a new command. New commands should include functional CLI tests and clear missing-tool behavior when they depend on external software.
