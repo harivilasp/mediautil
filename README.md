@@ -4,6 +4,7 @@
 [![PyPI Downloads](https://img.shields.io/pypi/dm/mediautil-cli)](https://pypistats.org/packages/mediautil-cli)
 [![npm](https://img.shields.io/npm/v/@harivilasp/mediautil)](https://www.npmjs.com/package/@harivilasp/mediautil)
 [![npm Downloads](https://img.shields.io/npm/dm/@harivilasp/mediautil)](https://www.npmjs.com/package/@harivilasp/mediautil)
+[![Crates.io](https://img.shields.io/crates/d/mediautil)](https://crates.io/crates/mediautil)
 
 `mediautil` is a local-first command-line utility for everyday media chores that should not require uploading private files to web tools. It gives developers and power users one consistent CLI for images, PDFs, OCR, QR codes, icons, data URIs, and base64 workflows.
 
